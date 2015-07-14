@@ -185,13 +185,13 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Set language and text formats
-defaults write NSGlobalDomain AppleLanguages -array "en" "ru" "uk"
-defaults write NSGlobalDomain AppleLocale -string "en_UA"
+defaults write NSGlobalDomain AppleLanguages -array "en" "ru"
+#defaults write NSGlobalDomain AppleLocale -string "en_"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the timezone; see `systemsetup -listtimezones` for other values
-systemsetup -settimezone "Europe/Kiev" > /dev/null
+systemsetup -settimezone "Europe/Moscow" > /dev/null
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
@@ -268,8 +268,8 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 chflags nohidden ~/Library
 
 # Remove Dropbox’s green checkmark icons in Finder
-file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
-[ -e "${file}" ] && mv -f "${file}" "${file}.bak"
+#file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
+#[ -e "${file}" ] && mv -f "${file}" "${file}.bak"
 
 ###############################################################################
 # Spotlight                                                                   #
