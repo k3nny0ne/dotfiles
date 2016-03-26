@@ -20,11 +20,11 @@ brew install jq
 brew install mtr
 brew install openssl
 brew install packer
-brew install parallel
+#brew install parallel
 brew install pv
 brew install ssh-copy-id
-brew install tmux
-brew install tmuxinator-completion
+#brew install tmux
+#brew install tmuxinator-completion
 #brew install vagrant
 #brew install vagrant-completion
 brew install vim --override-system-vi
@@ -32,15 +32,15 @@ brew install watch
 brew install wget --enable-iri
 brew cleanup
 
-brew cask install alfred
-brew cask alfred link
+#brew cask install alfred
+#brew cask alfred link
 #brew cask install anki
-brew cask install colloquy
+#brew cask install colloquy
 #brew cask install dropbox
 #brew cask install evernote
 brew cask install firefox
 brew cask install gimp
-brew cask install github
+#brew cask install github
 #brew cask install google-chrome
 brew cask install google-hangouts
 brew cask install gpgtools
@@ -49,12 +49,12 @@ brew cask install iterm2
 brew cask install little-snitch
 brew cask install macvim
 brew cask install mplayerx
-brew cask install onepassword
+#brew cask install onepassword
 brew cask install skype
 #brew cask install steam
 brew cask install the-unarchiver
-brew cask install things
-#brew cask install utorrent
+#brew cask install things
+brew cask install transmission
 #brew cask install vagrant
 #brew cask install virtualbox
 brew cask install wireshark
