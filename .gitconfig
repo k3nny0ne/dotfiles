@@ -1,8 +1,8 @@
 [user]
-	name = Sergii Golovatiuk
-	email = sgolovatiuk@mirantis.com
+	name = Andrey Kirilochkin
+	email = akirilochkin@mirantis.com
 [github]
-    user = holser
+    user = andrei4ka
 [credential]
     helper = cache --timeout=3600
 [color]
@@ -48,8 +48,8 @@
 [push]
       default = matching
 [gitreview]
-	username = holser
-	username = holser
+	username = akirilochkin
+	username = akirilochkin
 [alias]
   # Base commands
   ci = commit
