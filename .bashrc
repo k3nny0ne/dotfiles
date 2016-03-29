@@ -14,5 +14,7 @@ export HISTFILESIZE=4000
 export EDITOR=vim
 export VISUAL=${EDITOR}
 
+export LC_ALL="en_US.UTF-8"
+
 PATH=$HOME/bin:$PATH
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
