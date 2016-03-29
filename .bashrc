@@ -15,10 +15,10 @@ export EDITOR=vim
 export VISUAL=${EDITOR}
 
 #UTF-8 Support
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+#export LANG=en_US.UTF-8
+#export LANGUAGE=en_US.UTF-8
+#export LC_CTYPE=en_US.UTF-8
+#export LC_ALL=en_US.UTF-8
 
 PATH=$HOME/bin:$PATH
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
