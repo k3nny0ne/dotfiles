@@ -13,14 +13,16 @@ brew tap phinze/homebrew-cask
 
 brew install arping
 brew install aspell
+brew install mtr
 brew install brew-cask
 brew install git
+brew install git-review
 brew install gpg
 brew install jq
 brew install mtr
 brew install openssl
 brew install packer
-#brew install parallel
+brew install htop-osx
 brew install pv
 brew install ssh-copy-id
 #brew install tmux
@@ -28,37 +30,32 @@ brew install ssh-copy-id
 #brew install vagrant
 #brew install vagrant-completion
 brew install vim --override-system-vi
+brew install bash
+brew install bash-completion
+brew install corkscrew
+brew install midnight-commander
 brew install watch
 brew install wget --enable-iri
+brew install p7zip
+brew install xz
+brew install socat
+brew install terminal-notifier
 brew cleanup
 
-#brew cask install alfred
-#brew cask alfred link
-#brew cask install anki
-#brew cask install colloquy
-#brew cask install dropbox
-#brew cask install evernote
+brew cask install chicken
+brew cask install dropbox
 brew cask install firefox
 brew cask install gimp
-#brew cask install github
-#brew cask install google-chrome
 brew cask install google-hangouts
-#brew cask install gpgtools
 brew cask install hazel
 brew cask install iterm2
-#brew cask install little-snitch
 brew cask install macvim
 brew cask install mplayerx
-#brew cask install onepassword
 brew cask install skype
 brew cask install slack
 brew cask install spectacle
-#brew cask install steam
 brew cask install the-unarchiver
-#brew cask install things
 brew cask install transmission
-#brew cask install vagrant
-#brew cask install virtualbox
 brew cask install wireshark
 brew cask install xld
 brew cask install xquartz
