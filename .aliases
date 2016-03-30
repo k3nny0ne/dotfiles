@@ -4,8 +4,7 @@ if ls --color > /dev/null 2>&1; then
 else # OS X `ls`
     COLORFLAG="-G"
 fi
-
-alias ls='ls -l ${COLORFLAG}'
+alias ls='ls -G'
 alias ll='ls -lah ${COLORFLAG}'
 alias grep='grep --color'
 alias fgrep='fgrep --color'

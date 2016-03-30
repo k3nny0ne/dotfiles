@@ -1,4 +1,4 @@
-" Sergii Golovatiuk's .vimrc
+.bash_profile" Sergii Golovatiuk's .vimrc
 " Inspired by https://github.com/vgod/vimrc/blob/master/vimrc
 " https://github.com/derekwyatt/vim-config/blob/master/vimrc
 " http://spf13.com/post/perfect-vimrc-vim-config-file/
@@ -22,7 +22,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'msanders/snipmate.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'Rykka/riv.vim'
-
+Bundle 'davidhalter/jedi-vim'
 " General Settings
 
 set history=100         " keep 100 lines of last commands in history
@@ -122,3 +122,8 @@ set nofoldenable
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+
+nnoremap <F2> :set invpaste paste?<CR>
+imap <F2> <C-O>:set invpaste paste?<CR>
+set pastetoggle=<F2>
+set colorcolumn=80
