@@ -24,9 +24,6 @@ PATH=$PATH:$HOME/.rvm/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-if [[<32;19;3M -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
 if [[ ${EUID} == 0 ]] ; then
     PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
 else
@@ -38,5 +35,13 @@ if [[ -f ~/.dir_colors ]] ; then
 elif [[ -f /etc/DIR_COLORS ]] ; then
   eval $(dircolors -b /etc/DIR_COLORS)
 fi
+
+test -e ${HOME}/.iterm2_shell_integration.bash && source ${HOME}/.iterm2_shell_integration.bash
+
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
+
+ export HOMEBREW_GITHUB_API_TOKEN=c2ca67d1169436d4b0724ed9a0c0fe39323b826e
 
 test -e ${HOME}/.iterm2_shell_integration.bash && source ${HOME}/.iterm2_shell_integration.bash

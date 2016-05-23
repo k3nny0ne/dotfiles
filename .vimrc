@@ -1,4 +1,4 @@
-.bash_profile" Sergii Golovatiuk's .vimrc
+" Sergii Golovatiuk's .vimrc
 " Inspired by https://github.com/vgod/vimrc/blob/master/vimrc
 " https://github.com/derekwyatt/vim-config/blob/master/vimrc
 " http://spf13.com/post/perfect-vimrc-vim-config-file/
@@ -23,6 +23,8 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'Rykka/riv.vim'
 Bundle 'davidhalter/jedi-vim'
+
+
 " General Settings
 
 set history=100         " keep 100 lines of last commands in history
@@ -58,10 +60,10 @@ set nobackup            " no *~ backup files
 set nowritebackup
 set noswapfile
 
-set number      " Line numbering is on
-set autoindent  " auto indentation
-set smartindent " Use smart indendation if there is no indent file
-set copyindent  " copy the previous indentation on autoindenting
+"set number      " Line numbering is on
+"set autoindent  " auto indentation
+"set smartindent " Use smart indendation if there is no indent file
+"set copyindent  " copy the previous indentation on autoindenting
 set ignorecase  " ignore case when searching
 set smartcase   " ignore case if search pattern is all lowercase, case-sensitive otherwise
 set smarttab    " insert tabs on start of line according to context
@@ -126,4 +128,5 @@ match ExtraWhitespace /\s\+$/
 nnoremap <F2> :set invpaste paste?<CR>
 imap <F2> <C-O>:set invpaste paste?<CR>
 set pastetoggle=<F2>
+map <F7> mzgg=G'z<CR>
 set colorcolumn=80
