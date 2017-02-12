@@ -63,9 +63,6 @@ systemsetup -setrestartfreeze on
 # Check for software updates daily, not just once per week
 #defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
-# Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
-
 # Automatically illuminate built-in MacBook keyboard in low light
 defaults write com.apple.BezelServices kDim -bool true
 
@@ -89,11 +86,6 @@ defaults write com.apple.screencapture disable-shadow -bool true
 
 #Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-
-# Disable disk image verification
-defaults write com.apple.frameworks.diskimages skip-verify -bool true
-defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
-defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
 # Set Dock orientation to the left 
 defaults write com.apple.dock orientation "left" 
@@ -150,9 +142,6 @@ defaults write com.apple.dock wvous-br-modifier -int 3
 defaults write com.apple.dock wvous-bl-corner -int 11
 defaults write com.apple.dock wvous-bl-modifier -int 11
 
-# Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
-
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
 
@@ -207,9 +196,6 @@ defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 
 # Remove the spring loading delay for directories
 defaults write NSGlobalDomain com.apple.springing.delay -float 0
-
-# Avoid creating .DS_Store files on network volumes
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Disable disk image verification
 defaults write com.apple.frameworks.diskimages skip-verify -bool true
