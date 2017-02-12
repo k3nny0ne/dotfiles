@@ -12,7 +12,6 @@ brew tap homebrew/completions
 brew tap phinze/homebrew-cask
 
 brew install arping
-brew install brew-cask
 brew install git
 brew install gpg
 brew install jq
@@ -22,10 +21,10 @@ brew install ssh-copy-id
 #brew install tmux
 #brew install tmuxinator-completion
 brew cask install virtualbox
-brew install vagrant
+brew cask install vagrant
 
 #brew install vagrant-completion
-brew install vim --override-system-vi
+brew install vim --with-override-system-vi
 brew install bash-completion
 brew install watch
 brew install wget --enable-iri
