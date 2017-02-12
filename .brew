@@ -12,51 +12,53 @@ brew tap homebrew/completions
 brew tap phinze/homebrew-cask
 
 brew install arping
-brew install aspell
-brew install mtr
 brew install brew-cask
 brew install git
-brew install git-review
 brew install gpg
 brew install jq
-brew install mtr
-brew install openssl
-brew install packer
 brew install htop-osx
 brew install pv
 brew install ssh-copy-id
 #brew install tmux
 #brew install tmuxinator-completion
-#brew install vagrant
+brew cask install virtualbox
+brew install vagrant
+
 #brew install vagrant-completion
 brew install vim --override-system-vi
-brew install bash
 brew install bash-completion
-brew install corkscrew
-brew install midnight-commander
 brew install watch
 brew install wget --enable-iri
-brew install p7zip
-brew install xz
-brew install socat
-brew install terminal-notifier
 brew cleanup
 
 brew cask install chicken
-brew cask install dropbox
-brew cask install firefox
-brew cask install gimp
-brew cask install google-hangouts
-brew cask install hazel
+brew cask install cyberduck
+brew cask install filezilla
+
+brew cask install vlc
 brew cask install iterm2
-brew cask install macvim
-brew cask install mplayerx
-brew cask install skype
-brew cask install slack
 brew cask install spectacle
 brew cask install the-unarchiver
 brew cask install transmission
 brew cask install wireshark
 brew cask install xld
 brew cask install xquartz
+
+# Browsers
+brew cask install google-chrome
+brew cask install torbrowser
+
+# Messengers
+brew cask install telegram
+brew cask install skype
+brew cask install slack
+
+# Dev
+brew cask install vagrant-manager
+brew cask install docker
+brew cask install phpstorm
+brew cask install datagrip
+brew cask install sublime-text
+brew cask install sourcetree
+
 brew cask cleanup
