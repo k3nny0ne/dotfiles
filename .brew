@@ -23,7 +23,8 @@ brew install ssh-copy-id
 brew cask install virtualbox
 brew cask install vagrant
 
-#brew install vagrant-completion
+brew install vagrant-completion
+brew install ansible
 brew install vim --with-override-system-vi
 brew install bash-completion
 brew install watch
